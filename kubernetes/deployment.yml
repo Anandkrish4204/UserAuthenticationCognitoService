@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-auth-cognito
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: auth-pod
+  template:
+    metadata:
+      labels:
+        name: auth-pod
+    spec:
+      containers:
+        - name: user-auth-container
+          image: aangdocker/user-auth-cognito:latest
+          env:
+            - name: USER_POOL_ID
+              value: us-east-1_JFYIkq1PI
+            - name: CLIENT_ID
+              value: 5uis28qe622jf4pqt3itgtl1d

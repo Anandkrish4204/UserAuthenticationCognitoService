@@ -1,0 +1,19 @@
+{
+  "name": "userauthenticationcognitoservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node UserAuthApp.js"
+  },
+  "author": "Anand Krishnamoorthy",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^4.5.14",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
