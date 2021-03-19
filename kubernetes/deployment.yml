@@ -17,6 +17,6 @@ spec:
           image: aangdocker/user-auth-cognito:latest
           env:
             - name: USER_POOL_ID
-              value: us-east-1_JFYIkq1PI
+              value: us-east-2_Bc6u7Nbcd
             - name: CLIENT_ID
-              value: 5uis28qe622jf4pqt3itgtl1d
+              value: 616ni3tl9pkb94v937kr725965
